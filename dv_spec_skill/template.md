@@ -54,7 +54,7 @@
 
 ### 4.1 验证环境示意图
 
-*需要使用Mermaid代码画出验证框架图，描述环境结构和工作机制、需要的组件及组件配置、环境在集成环境中挂载思考等*
+*使用 architecture-diagram skill 生成 HTML+SVG 框图，通过 selenium+Chrome 截图为 PNG，插入到文档中。框图需描述环境结构和工作机制、需要的组件及组件配置、环境在集成环境中挂载思考等。详细规则参见 diagram_rules.md 和 diagram_screenshot.md。*
 
 ### 4.2 验证组件实现方案
 

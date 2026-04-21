@@ -65,22 +65,20 @@
 
 ## 5. 架构图必须绘制
 
-**规则**：2.1节必须包含mermaid架构图
+**规则**：2.1节必须包含设计架构图
+
+**方案**：使用 architecture-diagram skill 生成 HTML+SVG 架构图
 
 **正确做法**：
-```mermaid
-flowchart LR
-    ATE[ATE Host]
-    DUT[模块名 DUT]
-    CSR[Internal CSR]
-    AHB[AHB-Lite Fabric]
-    SLV[Registers / SRAM / Internal Slave]
+- 调用 architecture-diagram skill 生成架构图 HTML 文件
+- 使用 selenium+Chrome 截图为 PNG
+- 使用 python-docx 将图片插入 Word 文档
 
-    ATE --> DUT
-    DUT --> CSR
-    DUT --> AHB
-    AHB --> SLV
-```
+**架构图要素**：
+- DUT 模块位置
+- 外部接口连接
+- 内部子模块（如果有）
+- 与外部系统的交互关系
 
 **禁止行为**：
 - 只有文字描述，没有架构图
