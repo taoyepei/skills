@@ -342,7 +342,6 @@ if size == 0:
 | 截图模糊 | scale-factor问题 | 移除force-device-scale-factor |
 | 字体未加载 | 等待时间不足 | 增加time.sleep到5秒 |
 | 截图尺寸不对 | DPI缩放 | 使用2x窗口尺寸 |
-
 ## 7. 错误处理
 
 ### 7.1 Chrome 启动失败
